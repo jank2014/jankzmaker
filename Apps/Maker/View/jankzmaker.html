@@ -1,0 +1,54 @@
+<extend name="./Apps/Maker/View/Public/main.html"/>
+<block name="metatitle"><title>{{$metatitle}}</title></block>
+<block name="my_css">
+
+</block>
+<block name="main">
+<switch name="conftpl.type">
+	<include file="Apps/Maker/View/Elementary/form.html" />
+	<include file="Apps/Maker/View/Elementary/table.html" />
+</switch>
+
+</block>
+
+<block name="my_js">
+	<switch name="conftpl.type">
+		<case value="newform">
+			 <!-- 自定义js -->
+	        <script type="text/javascript">
+	        $(document).ready(function(){
+	              $("button[type=button]").click(function(){
+	                $.ajax({
+	                    type:'POST',
+	                    url:$("form").attr("action"),
+	                    data:$("form").serialize(),
+	                    success:function(response,status,xhr){
+	                       layer.msg(response.info);
+	                    }
+	                });
+	            });
+	        });
+	        </script>
+		</case>
+		<case value="newtable">
+		    <script src="__PUBLIC__/Common/laypage-v1.3/laypage/laypage.js"></script>
+		            <script type="text/javascript">
+		            laypage({
+		                cont: 'page_list',
+		                pages:$("#pages").val(),
+		                skip: true, //是否开启跳页
+		                skin: 'molv',
+		                curr: function(){ //通过url获取当前页，也可以同上（pages）方式获取
+		                    var page = location.search.match(/page=(\d+)/);
+		                    return page ? page[1] : 1;
+		                }(),
+		                jump: function(e, first){ //触发分页后的回调
+		                    if(!first){ //一定要加此判断，否则初始时会无限刷新
+		                        location.href = '?page='+e.curr;
+		                    }
+		                }
+		            });
+		        </script>
+		</case>
+	</switch>
+</block>
