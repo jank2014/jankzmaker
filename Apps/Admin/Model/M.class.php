@@ -1,8 +1,8 @@
 <?php
 namespace Admin\Model;
-use Think\Model\RelationModel;
+use Think\Model;
 
-class ManagerModel extends RelationModel{
+class ManagerModel extends Model{
 	protected $_validate = array(
 		array('username','require','用户名不能为空', 0,'unique',1),//新增验证
 		array('password','require','密码不能为空',0,'regex',1),
@@ -13,17 +13,6 @@ class ManagerModel extends RelationModel{
 		array('status','1'),
 		array('c_time',NOW_TIME,self::MODEL_INSERT)
 		);
-	protected $_link = array(
-		'AuthGroup' => array(
-		    'mapping_type'      =>  self::MANY_TO_MANY,
-		    'class_name'        =>  'AuthGroup',
-		    'mapping_name'      =>  'group',
-		    'foreign_key'       =>  'uid',
-		    'relation_foreign_key'  =>  'group_id',
-		    'relation_table'    =>  'hsc_auth_group_access' //此处应显式定义中间表名称，且不能使用C函数读取表前缀
-		    )
-		);
-
 }
 
 

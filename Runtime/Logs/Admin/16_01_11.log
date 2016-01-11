@@ -1,0 +1,65 @@
+[ 2016-01-11T18:53:59+08:00 ] ::1 /jankzmaker/index.php/Admin/Index/removeRuntime
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+
+[ 2016-01-11T18:54:06+08:00 ] ::1 /jankzmaker/index.php/Admin/Index/removeRuntime
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+
+[ 2016-01-11T18:54:11+08:00 ] ::1 /jankzmaker/index.php/Admin/Index/removeRuntime
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+
+[ 2016-01-11T18:54:14+08:00 ] ::1 /jankzmaker/index.php/Admin/Index/removeRuntime
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+
+[ 2016-01-11T18:57:47+08:00 ] ::1 /jankzmaker/index.php/Admin/Group/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_auth_group` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `hsc_auth_group` (`title`,`rules`) VALUES ('测试组','100，110') [ RunTime:0.0003s ]
+
+[ 2016-01-11T18:58:47+08:00 ] ::1 /jankzmaker/index.php/Admin/Manager/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_manager` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `hsc_manager` WHERE `username` = 'test3' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: auto /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `hsc_manager` (`username`,`password`,`email`,`level`,`status`,`c_time`) VALUES ('test3','123456','1234567@jankz.com','1','1','1452509927') [ RunTime:0.0004s ]
+
+[ 2016-01-11T19:51:09+08:00 ] ::1 /jankzmaker/index.php/Admin/Manager/test
+ERR: 1146:Table 'hsc.hsc_group' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hsc_group`
+
+[ 2016-01-11T19:51:15+08:00 ] ::1 /jankzmaker/index.php/Admin/Manager/test
+ERR: 1146:Table 'hsc.hsc_group' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hsc_group`
+
+[ 2016-01-11T19:52:12+08:00 ] ::1 /jankzmaker/index.php/Admin/Manager/test
+ERR: 1146:Table 'hsc.hsc_group' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hsc_group`
+
+[ 2016-01-11T19:56:28+08:00 ] ::1 /jankzmaker/index.php/Admin/Manager/test
+ERR: 1146:Table 'hsc.hsc_group' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hsc_group`
+
+[ 2016-01-11T19:57:36+08:00 ] ::1 /jankzmaker/index.php/Admin/Manager/test
+ERR: 1146:Table 'hsc.hsc_group' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hsc_group`
+

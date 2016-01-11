@@ -22,6 +22,7 @@ define('APP_PATH','./Apps/');
 
 //定义Common目录
 define('COMMON_PATH', './Common/');
+define('MYTEST_PATH', './test/');
 
 //定义runtime_path
 define('RUNTIME_PATH', './Runtime/');

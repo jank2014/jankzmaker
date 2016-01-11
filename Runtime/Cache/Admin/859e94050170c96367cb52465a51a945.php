@@ -1,6 +1,28 @@
-<extend name="Public:main"/>
-<block name="metatitle"><title>首页</title></block>
-<block name="main">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>首页</title>
+    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <!--[if lt IE 8]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="/jankzmaker/Public/Common/hplus/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="/jankzmaker/Public/Common/hplus/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="/jankzmaker/Public/Common/hplus/css/animate.min.css" rel="stylesheet">
+    <link href="/jankzmaker/Public/Common/hplus/css/style.min.css?v=4.0.0" rel="stylesheet">
+    
+</head>
+
+<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+    
 
             <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="nav-close"><i class="fa fa-times-circle"></i>
@@ -9,11 +31,11 @@
                 <ul class="nav" id="side-menu">
                     <li class="nav-header">
                         <div class="dropdown profile-element">
-                            <span><img alt="image" class="img-circle" src="__PUBLIC__/Common/hplus/img/profile_small.jpg" /></span>
+                            <span><img alt="image" class="img-circle" src="/jankzmaker/Public/Common/hplus/img/profile_small.jpg" /></span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="clear">
-                               <span class="block m-t-xs"><strong class="font-bold">{{$_SESSION['username']}}</strong></span>
-                                <span class="text-muted text-xs block">{{$_SESSION['admin_type']}}<b class="caret"></b></span>
+                               <span class="block m-t-xs"><strong class="font-bold"><?php echo ($_SESSION['username']); ?></strong></span>
+                                <span class="text-muted text-xs block"><?php echo ($_SESSION['admin_type']); ?><b class="caret"></b></span>
                                 </span>
                             </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
@@ -45,42 +67,30 @@
                             </li>
                         </ul>
                     </li>
-                    <volist name="info" id="first_menu">
-                        <if condition="$first_menu.pid eq 0">
-                        <li>
-                            <a href="{{:U($first_menu['url'])}}">
-                                <i class="fa {{$first_menu.icon}}"></i>
-                                <span class="nav-label"> {{$first_menu.title}}</span>
-                                <notempty name="first_menu.0"><span class="fa arrow"></span></notempty>
+                    <?php if(is_array($info)): $i = 0; $__LIST__ = $info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$first_menu): $mod = ($i % 2 );++$i; if($first_menu["pid"] == 0): ?><li>
+                            <a href="<?php echo U($first_menu['url']);?>">
+                                <i class="fa <?php echo ($first_menu["icon"]); ?>"></i>
+                                <span class="nav-label"> <?php echo ($first_menu["title"]); ?></span>
+                                <?php if(!empty($first_menu["0"])): ?><span class="fa arrow"></span><?php endif; ?>
                             </a>
-                            <notempty name="first_menu.0">
-                            <ul class="nav nav-second-level">
-                               <volist name="first_menu[0]" id ="second_menu">
-                                   <li>
-                                    <a class="<?php is_array($second_menu[0])? $class='NULL':$class='J_menuItem' ;echo $class;?>" href="{{:U($second_menu['url'])}}">
-                                        <i class="fa {{$second_menu.icon}}"></i>
-                                        <span class="nav-label">{{$second_menu.title}}</span>
-                                        <notempty name="second_menu.0"><span class="fa arrow"></span></notempty>
+                            <?php if(!empty($first_menu["0"])): ?><ul class="nav nav-second-level">
+                               <?php if(is_array($first_menu[0])): $i = 0; $__LIST__ = $first_menu[0];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$second_menu): $mod = ($i % 2 );++$i;?><li>
+                                    <a class="<?php is_array($second_menu[0])? $class='NULL':$class='J_menuItem' ;echo $class;?>" href="<?php echo U($second_menu['url']);?>">
+                                        <i class="fa <?php echo ($second_menu["icon"]); ?>"></i>
+                                        <span class="nav-label"><?php echo ($second_menu["title"]); ?></span>
+                                        <?php if(!empty($second_menu["0"])): ?><span class="fa arrow"></span><?php endif; ?>
                                     </a>
-                                    <notempty name="second_menu.0">
-                                        <ul class="nav nav-third-level">
-                                            <volist name="second_menu[0]" id="third_menu">
-                                                <li>
-                                                <a class="<?php is_array($third_menu[0])? $class='NULL':$class='J_menuItem' ;echo $class;?>" href="{{:U($third_menu['url'])}}">
-                                                        <i class="fa {{$third_menu.icon}}"></i>
-                                                    <span class="nav-label">{{$third_menu.title}}</span>
+                                    <?php if(!empty($second_menu["0"])): ?><ul class="nav nav-third-level">
+                                            <?php if(is_array($second_menu[0])): $i = 0; $__LIST__ = $second_menu[0];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$third_menu): $mod = ($i % 2 );++$i;?><li>
+                                                <a class="<?php is_array($third_menu[0])? $class='NULL':$class='J_menuItem' ;echo $class;?>" href="<?php echo U($third_menu['url']);?>">
+                                                        <i class="fa <?php echo ($third_menu["icon"]); ?>"></i>
+                                                    <span class="nav-label"><?php echo ($third_menu["title"]); ?></span>
                                                 </a>
-                                                </li>
-                                            </volist>
-                                        </ul>
-                                    </notempty>
-                                    </li>
-                                </volist>
-                            </ul>
-                            </notempty>
-                        </li>
-                        </if>
-                    </volist>
+                                                </li><?php endforeach; endif; else: echo "" ;endif; ?>
+                                        </ul><?php endif; ?>
+                                    </li><?php endforeach; endif; else: echo "" ;endif; ?>
+                            </ul><?php endif; ?>
+                        </li><?php endif; endforeach; endif; else: echo "" ;endif; ?>
 
                 </ul>
             </div>
@@ -106,7 +116,7 @@
                                 <li class="m-t-xs">
                                     <div class="dropdown-messages-box">
                                         <a href="profile.html" class="pull-left">
-                                            <img alt="image" class="img-circle" src="__PUBLIC__/Common/hplus/img/a7.jpg">
+                                            <img alt="image" class="img-circle" src="/jankzmaker/Public/Common/hplus/img/a7.jpg">
                                         </a>
                                         <div class="media-body">
                                             <small class="pull-right">46小时前</small>
@@ -120,7 +130,7 @@
                                 <li>
                                     <div class="dropdown-messages-box">
                                         <a href="profile.html" class="pull-left">
-                                            <img alt="image" class="img-circle" src="__PUBLIC__/Common/hplus/img/a4.jpg">
+                                            <img alt="image" class="img-circle" src="/jankzmaker/Public/Common/hplus/img/a4.jpg">
                                         </a>
                                         <div class="media-body ">
                                             <small class="pull-right text-navy">25小时前</small>
@@ -208,10 +218,10 @@
                         </li>
                     </ul>
                 </div>
-                <a href="{{:U('Admin/Login/logout')}}" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
+                <a href="<?php echo U('Admin/Login/logout');?>" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
             </div>
             <div class="row J_mainContent" id="content-main">
-                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="{{:U('Admin/Index/info')}}" frameborder="0" data-id="index_v1.html" seamless></iframe>
+                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="<?php echo U('Admin/Index/info');?>" frameborder="0" data-id="index_v1.html" seamless></iframe>
             </div>
             <div class="footer">
                 <div class="pull-right">&copy; 2014-2015 <a href="http://www.zi-han.net/" target="_blank">zihan's blog</a>
@@ -324,7 +334,7 @@
                             <div class="sidebar-message">
                                 <a href="#">
                                     <div class="pull-left text-center">
-                                        <img alt="image" class="img-circle message-avatar" src="__PUBLIC__/Common/hplus/img/a1.jpg">
+                                        <img alt="image" class="img-circle message-avatar" src="/jankzmaker/Public/Common/hplus/img/a1.jpg">
 
                                         <div class="m-t-xs">
                                             <i class="fa fa-star text-warning"></i>
@@ -342,7 +352,7 @@
                             <div class="sidebar-message">
                                 <a href="#">
                                     <div class="pull-left text-center">
-                                        <img alt="image" class="img-circle message-avatar" src="__PUBLIC__/Common/hplus/img/a2.jpg">
+                                        <img alt="image" class="img-circle message-avatar" src="/jankzmaker/Public/Common/hplus/img/a2.jpg">
                                     </div>
                                     <div class="media-body">
                                         HCY48之音乐大魔王会员专属皮肤已上线，快来一键换装拥有他，宣告你对华晨宇的爱吧！
@@ -354,7 +364,7 @@
                             <div class="sidebar-message">
                                 <a href="#">
                                     <div class="pull-left text-center">
-                                        <img alt="image" class="img-circle message-avatar" src="__PUBLIC__/Common/hplus/img/a3.jpg">
+                                        <img alt="image" class="img-circle message-avatar" src="/jankzmaker/Public/Common/hplus/img/a3.jpg">
 
                                         <div class="m-t-xs">
                                             <i class="fa fa-star text-warning"></i>
@@ -372,7 +382,7 @@
                             <div class="sidebar-message">
                                 <a href="#">
                                     <div class="pull-left text-center">
-                                        <img alt="image" class="img-circle message-avatar" src="__PUBLIC__/Common/hplus/img/a4.jpg">
+                                        <img alt="image" class="img-circle message-avatar" src="/jankzmaker/Public/Common/hplus/img/a4.jpg">
                                     </div>
 
                                     <div class="media-body">
@@ -385,7 +395,7 @@
                             <div class="sidebar-message">
                                 <a href="#">
                                     <div class="pull-left text-center">
-                                        <img alt="image" class="img-circle message-avatar" src="__PUBLIC__/Common/hplus/img/a8.jpg">
+                                        <img alt="image" class="img-circle message-avatar" src="/jankzmaker/Public/Common/hplus/img/a8.jpg">
                                     </div>
                                     <div class="media-body">
 
@@ -398,7 +408,7 @@
                             <div class="sidebar-message">
                                 <a href="#">
                                     <div class="pull-left text-center">
-                                        <img alt="image" class="img-circle message-avatar" src="__PUBLIC__/Common/hplus/img/a7.jpg">
+                                        <img alt="image" class="img-circle message-avatar" src="/jankzmaker/Public/Common/hplus/img/a7.jpg">
                                     </div>
                                     <div class="media-body">
                                         这哥们的新视频又来了，创意杠杠滴，帅炸了！
@@ -410,7 +420,7 @@
                             <div class="sidebar-message">
                                 <a href="#">
                                     <div class="pull-left text-center">
-                                        <img alt="image" class="img-circle message-avatar" src="__PUBLIC__/Common/hplus/img/a3.jpg">
+                                        <img alt="image" class="img-circle message-avatar" src="/jankzmaker/Public/Common/hplus/img/a3.jpg">
 
                                         <div class="m-t-xs">
                                             <i class="fa fa-star text-warning"></i>
@@ -428,7 +438,7 @@
                             <div class="sidebar-message">
                                 <a href="#">
                                     <div class="pull-left text-center">
-                                        <img alt="image" class="img-circle message-avatar" src="__PUBLIC__/Common/hplus/img/a4.jpg">
+                                        <img alt="image" class="img-circle message-avatar" src="/jankzmaker/Public/Common/hplus/img/a4.jpg">
                                     </div>
                                     <div class="media-body">
                                         我发起了一个投票 【你认为下午大盘会翻红吗？】
@@ -628,14 +638,23 @@
             </a>
         </div>
     </div>
-</block>
-<block name="my_js">
+
+
+    <script src="/jankzmaker/Public/Common/hplus/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/jankzmaker/Public/Common/hplus/js/bootstrap.min.js?v=3.3.5"></script>
+    <script src="/jankzmaker/Public/Common/hplus/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/jankzmaker/Public/Common/hplus/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/jankzmaker/Public/Common/hplus/js/plugins/layer/layer.min.js"></script>
+    <script src="/jankzmaker/Public/Common/hplus/js/hplus.min.js?v=4.0.0"></script>
+    <script src="/jankzmaker/Public/Common/hplus/js/contabs.min.js"></script>
+    <script src="/jankzmaker/Public/Common/hplus/js/plugins/pace/pace.min.js"></script>
+    
     <script>
         $(document).ready(function(){
             $("#removeRuntime").click(function(){
                 $.ajax({
                     type:'POST',
-                    url:'__URL__/removeRuntime',
+                    url:'/jankzmaker/index.php/Admin/Index/removeRuntime',
                     success:function(response,status,xhr){
                         layer.msg(response.info);
                     }
@@ -644,4 +663,7 @@
         });
 
     </script>
-</block>
+
+</body>
+
+</html>

@@ -27,6 +27,10 @@ class ManagerController extends Controller{
 				->setTbodyList($make_table['list'])
 				->setTbodyData($info)
 				->addTopBtn('default')
+				->addRightBtn('edit')
+				->addRightBtn('resume')
+				->addRightBtn('forbid')
+				->addRightBtn('delete')
 				->setPage($page_list)
 				->display();
 
@@ -57,6 +61,20 @@ class ManagerController extends Controller{
 				->addFormItem('group_id','select','用户组id',$options)
 				->display();
 		}
+	}
+	public function test(){
+		$manager = D('Manager');
+		$manager = $manager->where(array('status'=>1))->relation(true)->select();
+		foreach ($manager as $key => $value) {
+			foreach ($value as $key => $val) {
+				if(is_array($val)){
+					foreach ($val as $key => $va) {
+						print_r($va);
+					}
+				}
+			}
+		}
+		// print_r($manager);
 	}
 
 }

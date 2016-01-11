@@ -10,7 +10,7 @@ return array(
      /* SESSION设置 */
     'SESSION_AUTO_START'    =>  true,    // 是否自动开启Session
     'SESSION_OPTIONS'       =>  array(), // session 配置数组 支持type name id path expire domain 等参数
-    'SESSION_TYPE'          =>  '', // session hander类型 默认无需设置 除非扩展了session hander驱动
+    'SESSION_TYPE'          =>  'Db', // session hander类型 默认无需设置 除非扩展了session hander驱动
     'SESSION_PREFIX'        =>  '', // session 前缀
     //'VAR_SESSION_ID'      =>  'session_id',     //sessionID的提交变量
 
@@ -29,4 +29,5 @@ return array(
     'SHOW_PAGE_TRACE'		=>'true',
     'TMPL_CACHE_ON'         =>  false,
     'HTML_CACHE_ON'         =>  false,
-);
+    'AUTH_GROUP_ID'         =>'1',
+    );

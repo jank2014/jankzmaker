@@ -292,6 +292,11 @@ class JankzMaker extends Controller{
 				$this->assign('page_list',$this->page_list);
 				parent::display($this->template);
 				break;
+			case 'login_admin':
+				$this->assign('conftpl',$this->conftpl);
+				$this->assign('metatitle',$this->meta_title);
+				parent::display($this->template);
+				break;
 		}
 	}
 
