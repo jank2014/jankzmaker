@@ -1,0 +1,30 @@
+<extend name="Public:main" />
+<block name="main">
+<div class="row">
+ 	<div class="col-sm-12">
+        <div class="panel blank-panel">
+            <div class="panel-heading">
+                <div class="panel-options">
+
+                    <ul class="nav nav-tabs">
+                    <volist name="info" id="verb">
+                        <li><a data-toggle="tab" href="#tab-{{$verb.id}}"><i class="fa fa-vimeo"></i>{{$verb.verb}}</a></li>
+                    </volist>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="panel-body">
+                <div class="tab-content">
+                <volist name="info" id="tabs">
+                    <div id="tab-{{$tabs.id}}" class="tab-pane">
+                        <strong>{{$tabs.title}}</strong>
+
+                        <p>{{$tabs.url}}</p>
+                    </div>
+				</volist>
+            </div>
+        </div>
+	</div>
+</div>
+</block>

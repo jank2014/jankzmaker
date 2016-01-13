@@ -22,8 +22,9 @@
 
 
 </head>
-
 <body class="fixed-sidebar full-height-layout gray-bg">
+
+
     
 <?php switch($conftpl["type"]): case "newform": ?><div class="row">
             <div class="col-sm-12">

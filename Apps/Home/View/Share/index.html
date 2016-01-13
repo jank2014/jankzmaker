@@ -1,0 +1,38 @@
+<extend name="Public:main" />
+<block name="my_css"></block>
+<block name="main">
+<div class="row">
+    <volist name="info" id ="libs">
+        <div class="col-sm-3">
+            <div class="contact-box">
+                <a>
+                    <div class="col-sm-12 is_ajax">
+                        <h3 class="text-navy"><strong>{{$libs.title}}</strong></h3>
+                        <i class="fa fa-map-marker text-navy"></i> {{$libs.type}}
+                        <input type="hidden" name="url" value="{{:U('Home/Share/content',array('pid'=>$libs['id']))}}">
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
+            </div>
+        </div>
+    </volist>
+</div>
+</block>
+<block name="my_js">
+<script src="__PUBLIC__/Common/layer-v2.1/layer/layer.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(".is_ajax").click(function(){
+            url =$(this).children('input').val();
+            alert(url);
+            layer.open({
+                type: 2,
+                area: ['500px', '530px'],
+                fix: false, //不固定
+                maxmin: true,
+                content:url
+            });
+        });
+    });
+    </script>
+</block>

@@ -88,6 +88,68 @@ class SystemController extends CommonController{
 				->setPage($page_list)
 				->display();
 	}
+	public function menuadd(){
+		if(!empty($_POST)){
+			$system =D('System');
+			$system->create();
+			$res = $system->add();
+			if($res){
+				$this->success('添加成功',U('System/addmenu'));
+			}else{
+				$this->error($system->getError());
+			}
+		}else{
+			$info = getList();//调用无限级分类函数
+			$config = array('type'=>'newform');
+			$jankzmaker = new \JankzMaker\Controller\Admin\MakerForm();
+			$jankzmaker->setMetaTitle('测试页')
+				->setUrl(U('index'))
+				->addFormItem('title','text','名称',2,6)
+				->addFormItem('title','text','菜单名称',2,6)
+				->addFormItem('sort','text','排序值')
+				->addFormItem('url','text','链接地址')
+				->addFormItem('icon','text','图标')
+				->addFormItem('pid','select','父ID',2,4,$info)
+				->display();
+		}
+
+	}
+	public function test(){
+		//生成页面之前建构数据模型
+		$table=array(
+    		'id'=>'id',
+    		'pid'=>'父ID',
+    		'sort'=>'排序值',
+    		'url'=>'链接地址',
+    		'icon'=>'图表',
+    		'status'=>'状态',
+    		'c_time'=>'创建时间',
+    		'u_time'=>'修改时间',
+    		);
+		$page =$_GET['page'];
+		$system  = M('System');
+		$count = $system->count();
+		$page_list = ceil($count/10);
+		$info = $system->where(array('status'=>'1'))->page($page,10)->select();
+
+		//调用表格制作函数 返回make_table 用来拆分$tbale 的key 和 value
+		$make_table=makeTable($table);
+		//调用jankzmaker 生成页面
+ 		$jankzmaker = new \JankzMaker\Controller\Admin\MakerTable();
+ 		$jankzmaker->setMetaTitle('测试')
+				->setTbodyData($info)//总数据
+				->setTbodyList($make_table['list'])//循环列表 这里根据table设定生成
+				->setThead($make_table['thead'])//循环表头 这里根据table设定生成
+				->addRightBtn('edit')
+				->addRightBtn('resume')
+				->addRightBtn('forbid')
+				->addRightBtn('delete')
+				->addTopBtn('add,forbid')
+				->addTopBtn('delete')
+				->setPage($page_list)
+				->display();
+	}
+
 
 }
  ?>

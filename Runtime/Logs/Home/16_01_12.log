@@ -1,0 +1,395 @@
+[ 2016-01-12T16:49:23+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = 1  [ RunTime:0.0003s ]
+ERR: 模板不存在:./Apps/Home/View/Home/Index/index.html
+
+[ 2016-01-12T16:49:40+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = 1  [ RunTime:0.0005s ]
+ERR: 模板不存在:./Apps/Home/View/Home/Index/index.html
+
+[ 2016-01-12T16:50:34+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2016-01-12T16:50:43+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2016-01-12T16:51:29+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001805s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000697s ]
+
+[ 2016-01-12T16:52:35+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000838s ]
+
+[ 2016-01-12T16:54:39+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000471s ]
+
+[ 2016-01-12T16:56:15+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2016-01-12T16:56:22+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001080s ]
+
+[ 2016-01-12T16:57:39+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2016-01-12T16:59:02+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2016-01-12T18:03:17+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001465s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000868s ]
+
+[ 2016-01-12T18:05:32+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0003s ]
+
+[ 2016-01-12T18:06:37+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0007s ]
+
+[ 2016-01-12T18:07:12+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0002s ]
+
+[ 2016-01-12T18:08:06+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0003s ]
+
+[ 2016-01-12T18:15:19+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: info /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 23 行.
+
+[ 2016-01-12T18:16:48+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0003s ]
+
+[ 2016-01-12T18:17:34+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0003s ]
+
+[ 2016-01-12T18:19:02+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0003s ]
+
+[ 2016-01-12T18:19:29+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001352s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0003s ]
+
+[ 2016-01-12T18:20:18+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0003s ]
+
+[ 2016-01-12T18:21:33+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = 0  [ RunTime:0.0002s ]
+
+[ 2016-01-12T18:22:19+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = 1  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2016-01-12T18:22:38+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = 1  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2016-01-12T18:23:18+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2016-01-12T18:23:30+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000940s ]
+
+[ 2016-01-12T18:23:41+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: pid /Users/jankz/htdocs/jankzmaker/Apps/Home/Controller/ShareController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = null  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000705s ]
+
+[ 2016-01-12T18:24:08+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = 1  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2016-01-12T18:24:31+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = 1  [ RunTime:0.0003s ]
+
+[ 2016-01-12T18:24:44+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = 1  [ RunTime:0.0005s ]
+
+[ 2016-01-12T18:26:13+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = 1  [ RunTime:0.0003s ]
+
+[ 2016-01-12T18:29:09+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = 1  [ RunTime:0.0003s ]
+
+[ 2016-01-12T18:37:15+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = 1  [ RunTime:0.0003s ]
+
+[ 2016-01-12T18:37:25+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = 1  [ RunTime:0.0003s ]
+
+[ 2016-01-12T18:44:25+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001170s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = 1  [ RunTime:0.0003s ]
+
+[ 2016-01-12T18:45:07+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = 1  [ RunTime:0.0004s ]
+
+[ 2016-01-12T18:45:50+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = 1  [ RunTime:0.0003s ]
+
+[ 2016-01-12T18:46:13+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = 1  [ RunTime:0.0003s ]
+
+[ 2016-01-12T18:54:35+08:00 ] ::1 /jankzmaker/index.php/Home/Share/content
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001344s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_lib_contents` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `hsc_lib_contents` WHERE `pid` = 1  [ RunTime:0.0006s ]
+

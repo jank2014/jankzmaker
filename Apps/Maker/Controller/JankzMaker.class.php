@@ -75,7 +75,7 @@ class JankzMaker extends Controller{
 	 * @param [type] $title   [表单前label 或者 表单名]
 	 * @param array  $options [下拉框]
 	 */
-	public function addFormItem($name,$type,$title,$options=array()){
+	public function addFormItem($name,$type,$title,$options=array(),$col_l=2,$col_d=10){
 		$item['name'] = $name;
 		$item['type'] = $type;
 		$item['title'] = $title;
@@ -297,10 +297,15 @@ class JankzMaker extends Controller{
 				$this->assign('metatitle',$this->meta_title);
 				parent::display($this->template);
 				break;
+			case 'libs':
+				$this->assign('conftpl',$this->conftpl);
+				$this->assign('metatitle',$this->meta_title);
+				$this->assign('post_url',$this->post_url);
+				parent::display($this->template);
+				break;
 		}
 	}
 
 }
-
 
  ?>

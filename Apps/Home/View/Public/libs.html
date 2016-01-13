@@ -1,0 +1,53 @@
+<div class="row">
+	<volist name="info" id ="libs">
+		<div class="col-sm-3">
+		    <div class="contact-box">
+		        <a>
+		            <div class="col-sm-12 is_ajax" data-toggle="modal" data-target="#myModal">
+		                <h3 class="text-navy"><strong>{{$libs.title}}</strong></h3>
+		                <i class="fa fa-map-marker text-navy"></i> {{$libs.type}}
+		                <input type="hidden" name="pid" value="{{$libs.id}}">
+		            </div>
+		            <div class="clearfix"></div>
+		        </a>
+		    </div>
+		</div>
+	</volist>
+</div>
+<div class="modal inmodal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+            	<div class="row">
+	             	<div class="col-sm-12">
+		                <div class="panel blank-panel">
+		                    <div class="panel-heading">
+		                        <div class="panel-options">
+
+		                            <ul class="nav nav-tabs">
+		                            <volist name="content" id="verb">
+		                                <li><a data-toggle="tab" href="tabs_panels.html#{{$verb.verb}}"><i class="fa fa-vimeo"></i>{{$verb.verb}}</a></li>
+		                            </volist>
+		                            </ul>
+		                        </div>
+		                    </div>
+
+		                    <div class="panel-body">
+		                        <div class="tab-content">
+		                        <volist name="content" id="tabs">
+		                            <div id="{{$libs.verb}}" class="tab-pane active">
+		                                <strong>{{$libs.title}}</strong>
+
+		                                <p>{{$libs.url}}</p>
+		                            </div>
+		                        </div>
+								</volist>
+		                    </div>
+
+		                </div>
+	            	</div>
+				</div>
+            </div>
+        </div>
+    </div>
+</div>

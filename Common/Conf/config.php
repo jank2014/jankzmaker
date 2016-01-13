@@ -30,4 +30,5 @@ return array(
     'TMPL_CACHE_ON'         =>  false,
     'HTML_CACHE_ON'         =>  false,
     'AUTH_GROUP_ID'         =>'1',
+    'TAG_NESTED_LEVEL'      =>5,
     );

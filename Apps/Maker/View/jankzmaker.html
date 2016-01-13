@@ -5,9 +5,15 @@
 </block>
 <block name="main">
 <switch name="conftpl.type">
-	<include file="Apps/Maker/View/Elementary/form.html" />
-	<include file="Apps/Maker/View/Elementary/table.html" />
-	<include file="Apps/Maker/View/Elementary/login.html" />
+	<case value="newform">
+		<include file="Apps/Maker/View/Elementary/form.html" />
+	</case>
+	<case value="newtable">
+		<include file="Apps/Maker/View/Elementary/table.html" />
+	</case>
+	<case value="login_admin">
+		<include file="Apps/Maker/View/Elementary/login.html" />
+	</case>
 </switch>
 
 </block>

@@ -1,0 +1,133 @@
+<extend name="./Apps/JankzMaker/View/Public/main.html" />
+<block name="metatitle"><title>{{$meta_title}}</title></block>
+<block name="my_css"></block>
+<block name="main">
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <notempty name="topbtns">
+                    <volist name ="topbtns" id="topbtns">
+                        <a href="{{$topbtns.second.href}}" class="btn-sm {{$topbtns.second.btn_class}}">
+                        <i class="fa {{$topbtns.second.i_class}}"></i>
+                        {{$topbtns.second.name}}
+                        </a>&nbsp;
+                    </volist>
+                </notempty>
+                  <a class="btn-primary btn-sm" href="javascript:location.replace(location.href);">
+                <i class="fa fa-refresh"></i></a>
+
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="table_basic.html#">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="table_basic.html#">选项1</a>
+                        </li>
+                        <li><a href="table_basic.html#">选项2</a>
+                        </li>
+                    </ul>
+                    <a class="close-link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div class="row">
+                    <div class="col-sm-5 m-b-xs">
+                        <select class="input-sm form-control input-s-sm inline">
+                            <option value="0">请选择</option>
+                            <option value="1">选项1</option>
+                            <option value="2">选项2</option>
+                            <option value="3">选项3</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-4 m-b-xs">
+                        <div data-toggle="buttons" class="btn-group">
+                            <label class="btn btn-sm btn-white">
+                                <input type="radio" id="option1" name="options">天</label>
+                            <label class="btn btn-sm btn-white active">
+                                <input type="radio" id="option2" name="options">周</label>
+                            <label class="btn btn-sm btn-white">
+                                <input type="radio" id="option3" name="options">月</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="input-group">
+                            <input type="text" placeholder="请输入关键词" class="input-sm form-control"> <span class="input-group-btn">
+                                <button type="button" class="btn btn-sm btn-primary"> 搜索</button> </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                    <notempty name="thead">
+                        <thead>
+                            <tr>
+                            <th><input class="check-all" type="checkbox"></th>
+                            <volist name="thead" id="thead" >
+                                <th>{{$thead.name}}</th>
+                            </volist>
+                           <notempty name="rightbtns">
+                                <th>操作</th>
+                           </notempty>
+                            </tr>
+                        </thead>
+                    </notempty>
+                    <notempty name="tbody">
+                        <tbody>
+                        <volist name ="tbody" id="tbody">
+                            <tr>
+                            <td><input class="ids" type="checkbox" value="{{$tbody[$main_key]}}" name="ids[]"></td>
+                            <volist name ="tbody_list" id="list">
+                                <td>{{$tbody[$list['name']]}}</td>
+                            </volist>
+                                 <notempty name="tbody.rightbtns">
+                                <td>
+                                <volist name ="tbody.rightbtns" id="rightbtns">
+                                    <a href="{{$rightbtns.href}}" class="btn-xs {{$rightbtns.btn_class}}">
+                                    <i class="fa {{$rightbtns.i_class}}"></i>
+                                    {{$rightbtns.name}}
+                                    </a>&nbsp;
+                                </volist>
+                                </td>
+                                </notempty>
+                            </tr>
+                            </volist>
+                        </tbody>
+                        </notempty>
+                    </table>
+                    <notempty name="page_list">
+                        <div id="page_list"><input type="hidden" id="pages" value="{{$page_list}}"></div>
+                    </notempty>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</block>
+<block name="my_js">
+<script src="__PUBLIC__/Common/laypage-v1.3/laypage/laypage.js"></script>
+<script type="text/javascript">
+    laypage({
+        cont: 'page_list',
+        pages:$("#pages").val(),
+        skip: true, //是否开启跳页
+        skin: 'molv',
+        curr: function(){ //通过url获取当前页，也可以同上（pages）方式获取
+            var page = location.search.match(/page=(\d+)/);
+            return page ? page[1] : 1;
+        }(),
+        jump: function(e, first){ //触发分页后的回调
+            if(!first){ //一定要加此判断，否则初始时会无限刷新
+                location.href = '?page='+e.curr;
+            }
+        }
+    });
+</script>
+
+</block>

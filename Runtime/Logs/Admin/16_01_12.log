@@ -1,0 +1,15 @@
+[ 2016-01-12T12:36:36+08:00 ] ::1 /jankzmaker/index.php/Admin/Index/removeRuntime
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+
+[ 2016-01-12T21:54:16+08:00 ] ::1 /jankzmaker/index.php/Admin/System/addmenu
+ERR: Think\Controller:addPageItem方法不存在！
+
+[ 2016-01-12T23:56:20+08:00 ] ::1 /jankzmaker/index.php/Admin/Article/index.html?v=4.0
+ERR: 无法加载控制器:Article
+
+[ 2016-01-12T23:56:22+08:00 ] ::1 /jankzmaker/index.php/Admin/Article/class.html?v=4.0
+ERR: 无法加载控制器:Article
+

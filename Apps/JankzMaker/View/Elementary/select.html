@@ -1,0 +1,13 @@
+<case value="select">
+<div class="form-group">
+    <label class="col-sm-{{$item.col_l}} control-label">{{$item.title}}</label>
+    <div class="col-sm-{{$item.col_d}}">
+        <select class="form-control m-b" name="{{$item.name}}">
+            <foreach name="item.options" item="select">
+                <option value="{{$select.id}}">{{$select.title}}</option>
+            </foreach>
+        </select>
+    </div>
+</div>
+<div class="hr-line-dashed"></div>
+</case>
