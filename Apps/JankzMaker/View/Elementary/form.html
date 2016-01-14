@@ -26,8 +26,12 @@
                         <form method="post" class="form-horizontal" action="{{$post_url}}">
                             <volist name="form_items" id="item">
                                 <switch name="item.type">
-                                    <include file="Apps/JankzMaker/View/Elementary/text.html" />
-                                    <include file="Apps/JankzMaker/View/Elementary/select.html" />
+                                    <case value="text">
+                                        <include file="Apps/JankzMaker/View/Elementary/text.html" />
+                                    </case>
+                                    <case value="select">
+                                        <include file="Apps/JankzMaker/View/Elementary/select.html" />
+                                    </case>
                                 </switch>
                             </volist>
                             <div class="form-group">

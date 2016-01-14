@@ -5,8 +5,6 @@ use Think\Controller;
 class GroupController extends Controller{
 	public function index(){
 		$page = $_GET['page'];
-		$config = array(
-			'type'=>'newtable');
 		$table=array(
 			'id'		=>'主键',
 			'title'		=>'用户组中文名称',
@@ -17,9 +15,8 @@ class GroupController extends Controller{
 		$page_list = ceil($count/10);
 		$info = M('AuthGroup')->where(array('status'=>1))->page($page,10)->select();
 		$make_table=makeTable($table);
-		$jankzmaker = new \Maker\Controller\JankzMaker();
+		$jankzmaker = new \JankzMaker\Controller\Admin\MakerTable();
 		$jankzmaker->setMetaTitle('用户组管理')
-				->addConfTpl($config)
 				->setThead($make_table['thead'])
 				->setTbodyList($make_table['list'])
 				->setTbodyData($info)
@@ -40,11 +37,9 @@ class GroupController extends Controller{
 				$this->error($info->getError);
 			}
 		}else{
-			$config = array(
-			'type'=>'newform');
-			$jankzmaker = new \Maker\Controller\JankzMaker();
+			$jankzmaker = new \JankzMaker\Controller\Admin\MakerForm();
 			$jankzmaker->setMetaTitle('添加用户组')
-				->addConfTpl($config)
+				->setCoulmn(1)
 				->setUrl(U('Group/add'))
 				->addFormItem('title','text','用户组名')
 				->addFormItem('rules','text','规则id')

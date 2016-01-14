@@ -40,9 +40,9 @@ class LoginController extends Controller{
 			}
 		}else{
 			$config = array('type'=>'login_admin');
-			$jankzmaker = new \Maker\Controller\JankzMaker();
+			$jankzmaker = new \JankzMaker\Controller\Common\MakerCommon();
 			$jankzmaker->setMetaTitle('登陆')
-					->addConfTpl($config)
+					->addPageItem('login_admin')
 					->display();
 		}
 	}

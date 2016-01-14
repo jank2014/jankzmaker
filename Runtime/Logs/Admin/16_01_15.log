@@ -1,0 +1,68 @@
+[ 2016-01-15T00:27:01+08:00 ] ::1 /jankzmaker/index.php/Admin/Manager/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_manager` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `hsc_manager` WHERE `username` = '' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Trying to get property of non-object /Users/jankz/htdocs/jankzmaker/Apps/Admin/Controller/ManagerController.class.php 第 46 行.
+
+[ 2016-01-15T00:27:06+08:00 ] ::1 /jankzmaker/index.php/Admin/Manager/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_manager` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `hsc_manager` WHERE `username` = '' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Trying to get property of non-object /Users/jankz/htdocs/jankzmaker/Apps/Admin/Controller/ManagerController.class.php 第 46 行.
+
+[ 2016-01-15T00:27:17+08:00 ] ::1 /jankzmaker/index.php/Admin/Manager/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_manager` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `hsc_manager` WHERE `username` = '' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Trying to get property of non-object /Users/jankz/htdocs/jankzmaker/Apps/Admin/Controller/ManagerController.class.php 第 46 行.
+
+[ 2016-01-15T00:34:23+08:00 ] ::1 /jankzmaker/index.php/Admin/Manager/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_manager` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `hsc_manager` WHERE `username` = '' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-01-15T00:34:34+08:00 ] ::1 /jankzmaker/index.php/Admin/Manager/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_manager` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `hsc_manager` WHERE `username` = '' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2016-01-15T00:36:26+08:00 ] ::1 /jankzmaker/index.php/Admin/Manager/add.html
+ERR: Think\Controller:addConfTpl方法不存在！
+
+[ 2016-01-15T00:42:33+08:00 ] ::1 /jankzmaker/index.php/Admin/Manager/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_manager` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `hsc_manager` WHERE `username` = 'janzk4' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: auto /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `hsc_manager` (`username`,`password`,`email`,`level`,`status`,`c_time`) VALUES ('janzk4','apks2000','123456@123.com','8','1','1452789753') [ RunTime:0.0010s ]
+
+[ 2016-01-15T00:56:00+08:00 ] ::1 /jankzmaker/index.php/Admin/Group/add.html
+ERR: Think\Controller:addConfTpl方法不存在！
+
+[ 2016-01-15T01:20:16+08:00 ] ::1 /jankzmaker/index.php/Admin/Auth/add.html
+ERR: 非法操作:add
+

@@ -4,7 +4,7 @@
  * @authors jankz (jankz@jankz.com)
  * @date    2016-01-07 17:27:18
  * @qq   979890264
- * @version $Id$
+ * @version v1.0
  */
 namespace JankzMaker\Controller;
 use Think\View;

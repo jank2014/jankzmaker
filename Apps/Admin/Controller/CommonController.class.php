@@ -20,7 +20,6 @@ class CommonController extends Controller{
 
     	$jankzmaker = new \Maker\Controller\JankzMaker();
     	$jankzmaker->setMetaTitle('测试页面')
-                    ->addConfTpl($config)
     				->display();
    }
 

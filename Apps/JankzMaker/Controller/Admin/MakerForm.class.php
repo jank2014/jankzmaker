@@ -1,4 +1,10 @@
 <?php
+/**
+ * @authors jankz (jankz@jankz.com)
+ * @date    2016-01-07 17:27:18
+ * @qq   979890264
+ * @version v1.0
+ */
 namespace JankzMaker\Controller\Admin;
 use Think\Controller;
 class MakerForm extends Controller{
@@ -8,6 +14,7 @@ class MakerForm extends Controller{
 	private $form_data = array();
 	private $extra_html;
 	private $is_ajax = true;
+	private $set_coulmn;//设置分栏 默认为一栏
 	private $template;
 
 	protected function _initialize(){
@@ -17,6 +24,11 @@ class MakerForm extends Controller{
 		$this->meta_title = $meta_title;
 		return $this;
 	}
+	public function setCoulmn($set_coulmn = 1){
+		$this->set_coulmn =$set_coulmn;
+		return $this;
+	}
+
 	public function setUrl($post_url){
 		$this->post_url = $post_url;
 		return $this;
@@ -29,11 +41,12 @@ class MakerForm extends Controller{
 		$this->template = $template;
 		return $this;
 	}
-	public function addFormItem($name,$type,$title,$col_l=2,$col_d=10,$options=array()){
+	public function addFormItem($name,$type,$title,$coulmn=1,$col_l=2,$col_d=10,$options=array()){
 		$item['name']=$name;
 		$item['type']=$type;
 		$item['title']=$title;
 		$item['options']=$options;
+		$item['coulmn']=$coulmn;
 		$item['col_l'] =$col_l;
 		$item['col_d'] =$col_d;
 		$this->form_items[] = $item;
@@ -48,6 +61,7 @@ class MakerForm extends Controller{
 		$this->assign('post_url',$this->post_url);
 		$this->assign('form_data',$this->form_data);
 		$this->assign('form_items',$this->form_items);
+		$this->assign('set_coulmn',$this->set_coulmn);
 		$this->assign('is_ajax',$this->is_ajax);
 		parent::display($this->template);
 	}

@@ -5,8 +5,6 @@ use Think\Controller;
 class ManagerController extends Controller{
 	public function index(){
 		$page = $_GET['page'];
-		$config = array(
-			'type'=>'newtable');
 		$table=array(
 			'id'			=>'主键',
 			'username'		=>'管理员名称',
@@ -20,9 +18,8 @@ class ManagerController extends Controller{
 		$page_list = ceil($count/10);
 		$info = M('Manager')->where(array('status'=>1))->page($page,10)->select();
 		$make_table=makeTable($table);
-		$jankzmaker = new \Maker\Controller\JankzMaker();
+		$jankzmaker = new \JankzMaker\Controller\Admin\MakerTable();
 		$jankzmaker->setMetaTitle('管理员列表')
-				->addConfTpl($config)
 				->setThead($make_table['thead'])
 				->setTbodyList($make_table['list'])
 				->setTbodyData($info)
@@ -43,22 +40,20 @@ class ManagerController extends Controller{
 			if($info){
 				$this->success('添加成功');
 			}else{
-				$this->error($info->getError);
+				$this->error($this->getError);
 			}
 		}else{
 			$options = M('AuthGroup')->where(array('status'=>1))->select();
-			$config = array(
-			'type'=>'newform');
-			$jankzmaker = new \Maker\Controller\JankzMaker();
+			$jankzmaker = new \JankzMaker\Controller\Admin\MakerForm();
 			$jankzmaker->setMetaTitle('添加管理员')
-				->addConfTpl($config)
+				->setCoulmn(1)//设置是否分列
 				->setUrl(U('Manager/add'))
 				->addFormItem('username','text','管理员名称')
 				->addFormItem('password','text','密码')
 				->addFormItem('repassword','text','重复密码')
 				->addFormItem('email','text','邮箱')
 				->addFormItem('level','text','管理等级')
-				->addFormItem('group_id','select','用户组id',$options)
+				->addFormItem('group_id','select','用户组id',1,2,10,$options)
 				->display();
 		}
 	}

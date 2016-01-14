@@ -1,0 +1,100 @@
+[ 2016-01-14T17:56:21+08:00 ] ::1 /jankzmaker/index.php/Admin/System/add.html
+ERR: 非法操作:add
+
+[ 2016-01-14T17:56:26+08:00 ] ::1 /jankzmaker/index.php/Admin/Auth/add.html
+ERR: 非法操作:add
+
+[ 2016-01-14T18:14:24+08:00 ] ::1 /jankzmaker/index.php/Admin/Manager/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_manager` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `hsc_manager` WHERE `username` = '' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Trying to get property of non-object /Users/jankz/htdocs/jankzmaker/Apps/Admin/Controller/ManagerController.class.php 第 46 行.
+
+[ 2016-01-14T18:14:28+08:00 ] ::1 /jankzmaker/index.php/Admin/Manager/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_manager` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `hsc_manager` WHERE `username` = '' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Trying to get property of non-object /Users/jankz/htdocs/jankzmaker/Apps/Admin/Controller/ManagerController.class.php 第 46 行.
+
+[ 2016-01-14T18:14:28+08:00 ] ::1 /jankzmaker/index.php/Admin/Manager/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_manager` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `hsc_manager` WHERE `username` = '' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Trying to get property of non-object /Users/jankz/htdocs/jankzmaker/Apps/Admin/Controller/ManagerController.class.php 第 46 行.
+
+[ 2016-01-14T18:14:28+08:00 ] ::1 /jankzmaker/index.php/Admin/Manager/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_manager` [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `hsc_manager` WHERE `username` = '' LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Trying to get property of non-object /Users/jankz/htdocs/jankzmaker/Apps/Admin/Controller/ManagerController.class.php 第 46 行.
+
+[ 2016-01-14T18:14:33+08:00 ] ::1 /jankzmaker/index.php/Admin/Manager/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_manager` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `hsc_manager` WHERE `username` = '' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Trying to get property of non-object /Users/jankz/htdocs/jankzmaker/Apps/Admin/Controller/ManagerController.class.php 第 46 行.
+
+[ 2016-01-14T18:14:39+08:00 ] ::1 /jankzmaker/index.php/Admin/Manager/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_manager` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `hsc_manager` WHERE `username` = '' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Trying to get property of non-object /Users/jankz/htdocs/jankzmaker/Apps/Admin/Controller/ManagerController.class.php 第 46 行.
+
+[ 2016-01-14T18:15:02+08:00 ] ::1 /jankzmaker/index.php/Admin/Manager/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_manager` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `hsc_manager` WHERE `username` = '' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Trying to get property of non-object /Users/jankz/htdocs/jankzmaker/Apps/Admin/Controller/ManagerController.class.php 第 46 行.
+
+[ 2016-01-14T18:18:17+08:00 ] ::1 /jankzmaker/index.php/Admin/System/edit/id/1.html
+ERR: 非法操作:edit
+
+[ 2016-01-14T18:18:19+08:00 ] ::1 /jankzmaker/index.php/Admin/System/resume/id/1/status/1.html
+ERR: 非法操作:resume
+
+[ 2016-01-14T18:18:50+08:00 ] ::1 /jankzmaker/index.php/Admin/System/delete/id/1/status/1.html
+ERR: 非法操作:delete
+
+[ 2016-01-14T18:18:55+08:00 ] ::1 /jankzmaker/index.php/Admin/System/table_basic.html
+ERR: 非法操作:table_basic
+
+[ 2016-01-14T18:18:58+08:00 ] ::1 /jankzmaker/index.php/Admin/System/table_basic.html
+ERR: 非法操作:table_basic
+
+[ 2016-01-14T18:19:09+08:00 ] ::1 /jankzmaker/index.php/Admin/Article/index.html?v=4.0
+ERR: 无法加载控制器:Article
+
+[ 2016-01-14T18:19:10+08:00 ] ::1 /jankzmaker/index.php/Admin/Article/class.html?v=4.0
+ERR: 无法加载控制器:Article
+
+[ 2016-01-14T22:52:32+08:00 ] ::1 /jankzmaker/index.php/Admin/System/add.html
+ERR: 非法操作:add
+

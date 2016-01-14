@@ -1,4 +1,10 @@
 <?php
+/**
+ * @authors jankz (jankz@jankz.com)
+ * @date    2016-01-07 17:27:18
+ * @qq   979890264
+ * @version v1.0
+ */
 namespace JankzMaker\Controller\Admin;
 use Think\Controller;
 class MakerTable extends Controller{
@@ -152,7 +158,6 @@ class MakerTable extends Controller{
 				break;
 		}
 		return $this;
-		var_dump($this->rightbtns);
 	}
 	/**
 	 * [设置模板]
