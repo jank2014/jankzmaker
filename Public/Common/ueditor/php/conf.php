@@ -14,14 +14,14 @@ $QINIU_RS_HOST	= 'http://rs.qbox.me';
 $QINIU_RSF_HOST	= 'http://rsf.qbox.me';
 
 //配置$QINIU_ACCESS_KEY和$QINIU_SECRET_KEY 为你自己的key
-$QINIU_ACCESS_KEY	= 'KUN6xYZlOAtid2MjHm90-6VFY2M7HC90ijDH4uOR';
-$QINIU_SECRET_KEY	= 'D-K57TE5hPe3krexftxLWFKmL2xbQEKA-mtkrUfB';
+$QINIU_ACCESS_KEY	= 'HVupVspwBx8ss4mMdjflTwkh2mYb7uPLjPxs2Fko';
+$QINIU_SECRET_KEY	= 'hJ3IJQPmzG8HTi7S6XcG33YOiEm5ZOrJd1pUQCPl';
 
 //配置bucket为你的bucket
-$BUCKET = "gitwiduu";
+$BUCKET = "jankzshare";
 
 //配置你的域名访问地址
-$HOST  = "http://gitwiduu.u.qiniudn.com";
+$HOST  = "http://7xjw2z.com1.z0.glb.clouddn.com";
 
 //上传超时时间
 $TIMEOUT = "3600";

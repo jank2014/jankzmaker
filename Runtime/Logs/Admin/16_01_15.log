@@ -66,3 +66,42 @@ ERR: Think\Controller:addConfTpl方法不存在！
 [ 2016-01-15T01:20:16+08:00 ] ::1 /jankzmaker/index.php/Admin/Auth/add.html
 ERR: 非法操作:add
 
+[ 2016-01-15T17:48:29+08:00 ] ::1 /jankzmaker/index.php/Admin/Article/index.html?v=4.0
+ERR: 无法加载控制器:Article
+
+[ 2016-01-15T17:48:30+08:00 ] ::1 /jankzmaker/index.php/Admin/Article/class.html?v=4.0
+ERR: 无法加载控制器:Article
+
+[ 2016-01-15T17:48:56+08:00 ] ::1 /jankzmaker/index.php/Admin/Index/removeRuntime
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+
+[ 2016-01-15T21:46:18+08:00 ] ::1 /jankzmaker/index.php/Admin/User/index.html?v=4.0
+ERR: 无法加载控制器:User
+
+[ 2016-01-15T21:47:40+08:00 ] ::1 /jankzmaker/index.php/Admin/User/index.html?v=4.0
+ERR: 无法加载控制器:User
+
+[ 2016-01-15T21:48:37+08:00 ] ::1 /jankzmaker/index.php/Admin/User/index
+ERR: 无法加载控制器:User
+
+[ 2016-01-15T21:49:20+08:00 ] ::1 /jankzmaker/index.php/Admin/User/index
+ERR: 无法加载控制器:User
+
+[ 2016-01-15T21:49:21+08:00 ] ::1 /jankzmaker/index.php/Admin/User/index
+ERR: 无法加载控制器:User
+
+[ 2016-01-15T21:49:21+08:00 ] ::1 /jankzmaker/index.php/Admin/User/index
+ERR: 无法加载控制器:User
+
+[ 2016-01-15T21:49:29+08:00 ] ::1 /jankzmaker/index.php/Admin/User/test
+ERR: 无法加载控制器:User
+
+[ 2016-01-15T21:50:38+08:00 ] ::1 /jankzmaker/index.php/Admin/User
+ERR: 无法加载控制器:User
+
+[ 2016-01-15T21:50:47+08:00 ] ::1 /jankzmaker/index.php/Admin/User/index
+ERR: 无法加载控制器:User
+

@@ -58,6 +58,53 @@
                 <button type="submit" class="btn btn-primary block full-width m-b">登 录</button>
             </form>
         </div>
+    </div><?php break;?>
+<?php case "login_home": ?><div class="middle-box text-center loginscreen  animated fadeInDown">
+        <div>
+            <div>
+
+                <h1 class="logo-name"></h1>
+
+            </div>
+            <h3>欢迎登陆</h3>
+
+            <form class="m-t" role="form" action="<?php echo U('Home/Login/index');?>" method="post">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="用户名" required="" name="username">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="密码" required="" name="password">
+                </div>
+                <button type="submit" class="btn btn-primary block full-width m-b">登 录</button>
+                <p class="text-muted text-center"> <a href="login.html#"><small>忘记密码了？</small></a> | <a href="<?php echo U('Login/register');?>">注册一个新账号</a>
+                </p>
+
+            </form>
+        </div>
+    </div><?php break;?>
+<?php case "register": ?><div class="middle-box text-center loginscreen   animated fadeInDown">
+        <div>
+            <div>
+            </div>
+            <h3>欢迎注册HSC家校互动</h3>
+            <p>创建一个HSC新账户</p>
+            <form class="m-t" role="form" action="login.html">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="请输入用户名" required="">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="请输入密码" required="">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="请再次输入密码" required="">
+                </div>
+                <button type="submit" class="btn btn-primary block full-width m-b">注 册</button>
+
+                <p class="text-muted text-center"><small>已经有账户了？</small><a href="<?php echo U('Login/index');?>">点此登录</a>
+                </p>
+
+            </form>
+        </div>
     </div><?php break; endswitch; endforeach; endif; else: echo "" ;endif; ?>
 
 
