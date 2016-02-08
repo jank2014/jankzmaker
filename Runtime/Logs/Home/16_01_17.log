@@ -1,0 +1,194 @@
+[ 2016-01-17T01:27:50+08:00 ] ::1 /jankzmaker/index.php
+ERR: Think\Controller:setMetaTitile方法不存在！
+
+[ 2016-01-17T05:45:45+08:00 ] ::1 /jankzmaker/index.php/Home/Index/login.html
+ERR: 非法操作:login
+
+[ 2016-01-17T05:46:21+08:00 ] ::1 /jankzmaker/index.php/Home/Index/login.html
+ERR: 非法操作:login
+
+[ 2016-01-17T19:40:38+08:00 ] ::1 /jankzmaker/index.php/Home/User/detail.html
+ERR: 非法操作:detail
+
+[ 2016-01-17T19:41:20+08:00 ] ::1 /jankzmaker/index.php/Home/User/detail.html
+ERR: 非法操作:detail
+
+[ 2016-01-17T20:09:46+08:00 ] ::1 /jankzmaker/index.php/Home/User/parentnum.html
+ERR: 1054:Unknown column 'parent_num' in 'field list'
+ [ SQL语句 ] : SELECT `parent_num` FROM `hsc_student` WHERE `name` = 'jankzson' LIMIT 1  
+
+[ 2016-01-17T20:40:11+08:00 ] ::1 /jankzmaker/index.php/Home/User/parentnum.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_student` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `hsc_student` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-17T20:41:43+08:00 ] ::1 /jankzmaker/index.php/Home/User/parentnum.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_student` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_student` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-01-17T20:41:50+08:00 ] ::1 /jankzmaker/index.php/Home/User/parentnum.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_student` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `hsc_student` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-01-17T20:42:01+08:00 ] ::1 /jankzmaker/index.php/Home/User/parentnum.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_student` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_student` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-01-17T20:42:26+08:00 ] ::1 /jankzmaker/index.php/Home/User/parentnum.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_student` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_student` WHERE `name` = 'jankzson' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hsc_user` [ RunTime:0.0004s ]
+
+[ 2016-01-17T20:42:59+08:00 ] ::1 /jankzmaker/index.php/Home/User/parentnum.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_student` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `hsc_student` WHERE `name` = 'jankzson' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hsc_user` [ RunTime:0.0015s ]
+
+[ 2016-01-17T20:50:52+08:00 ] ::1 /jankzmaker/index.php/Home/User/parentnum.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_student` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_student` WHERE `name` = 'jankzson' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hsc_user` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+ERR: 1264:Out of range value for column 'idcard' at row 1
+ [ SQL语句 ] : UPDATE `hsc_user` SET `id`='3',`real_name`='赵文强',`idcard`='412725199303230618',`phone`='18316028489',`sex`='1',`parent_number`='201200001'
+ERR: 1264:Out of range value for column 'idcard' at row 1
+ [ SQL语句 ] : UPDATE `hsc_user` SET `id`='3',`real_name`='赵文强',`idcard`='412725199303230618',`phone`='18316028489',`sex`='1',`parent_number`='201200001'
+
+[ 2016-01-17T20:52:17+08:00 ] ::1 /jankzmaker/index.php/Home/User/parentnum.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_student` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_student` WHERE `name` = 'jankzson' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hsc_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+ERR: 1264:Out of range value for column 'idcard' at row 1
+ [ SQL语句 ] : UPDATE `hsc_user` SET `id`='3',`real_name`='赵文强',`idcard`='412725199303230618',`phone`='18316028489',`sex`='1',`parent_number`='201200001'
+ERR: 1264:Out of range value for column 'idcard' at row 1
+ [ SQL语句 ] : UPDATE `hsc_user` SET `id`='3',`real_name`='赵文强',`idcard`='412725199303230618',`phone`='18316028489',`sex`='1',`parent_number`='201200001'
+
+[ 2016-01-17T20:54:01+08:00 ] ::1 /jankzmaker/index.php/Home/User/parentnum.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_student` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `hsc_student` WHERE `name` = 'jankzson' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hsc_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+ERR: 1451:Cannot delete or update a parent row: a foreign key constraint fails (`hsc`.`hsc_user_number`, CONSTRAINT `fk_hsc_user_number_hsc_user1` FOREIGN KEY (`uid`) REFERENCES `hsc_user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+ [ SQL语句 ] : UPDATE `hsc_user` SET `id`='3',`real_name`='赵文强',`idcard`='412725199303230618',`phone`='18316028489',`sex`='1',`parent_number`='201200001'
+ERR: 1451:Cannot delete or update a parent row: a foreign key constraint fails (`hsc`.`hsc_user_number`, CONSTRAINT `fk_hsc_user_number_hsc_user1` FOREIGN KEY (`uid`) REFERENCES `hsc_user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+ [ SQL语句 ] : UPDATE `hsc_user` SET `id`='3',`real_name`='赵文强',`idcard`='412725199303230618',`phone`='18316028489',`sex`='1',`parent_number`='201200001'
+
+[ 2016-01-17T20:54:20+08:00 ] ::1 /jankzmaker/index.php/Home/User/parentnum.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_student` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_student` WHERE `name` = 'jankzson' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hsc_user` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+ERR: 1451:Cannot delete or update a parent row: a foreign key constraint fails (`hsc`.`hsc_user_number`, CONSTRAINT `fk_hsc_user_number_hsc_user1` FOREIGN KEY (`uid`) REFERENCES `hsc_user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+ [ SQL语句 ] : UPDATE `hsc_user` SET `id`='3',`real_name`='赵文强',`idcard`='412725199303230618',`phone`='18316028489',`sex`='1',`parent_number`='201200001'
+ERR: 1451:Cannot delete or update a parent row: a foreign key constraint fails (`hsc`.`hsc_user_number`, CONSTRAINT `fk_hsc_user_number_hsc_user1` FOREIGN KEY (`uid`) REFERENCES `hsc_user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+ [ SQL语句 ] : UPDATE `hsc_user` SET `id`='3',`real_name`='赵文强',`idcard`='412725199303230618',`phone`='18316028489',`sex`='1',`parent_number`='201200001'
+
+[ 2016-01-17T21:10:26+08:00 ] ::1 /jankzmaker/index.php/Home/Login/login.html
+ERR: 非法操作:login
+
+[ 2016-01-17T21:12:24+08:00 ] ::1 /jankzmaker/index.php/Home/Login/login.html
+ERR: 非法操作:login
+
+[ 2016-01-17T21:22:25+08:00 ] ::1 /jankzmaker/index.php/Home/User/parentnum.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_student` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_student` WHERE `stu_name` = 'jankzson' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hsc_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+ERR: 1062:Duplicate entry '3' for key 'PRIMARY'
+ [ SQL语句 ] : UPDATE `hsc_user` SET `id`='3',`real_name`='赵文强',`idcard`='412725199303230618',`phone`='18316028489',`parent_number`='p201200001'
+ERR: 1062:Duplicate entry '3' for key 'PRIMARY'
+ [ SQL语句 ] : UPDATE `hsc_user` SET `id`='3',`real_name`='赵文强',`idcard`='412725199303230618',`phone`='18316028489',`parent_number`='p201200001'
+
+[ 2016-01-17T21:22:53+08:00 ] ::1 /jankzmaker/index.php/Home/User/parentnum.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_student` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_student` WHERE `stu_name` = 'jankzson' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hsc_user` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+ERR: 1062:Duplicate entry '3' for key 'PRIMARY'
+ [ SQL语句 ] : UPDATE `hsc_user` SET `id`='3',`real_name`='赵文强',`idcard`='412725199303230618',`phone`='18316028489',`parent_number`='p201200001'
+ERR: 1062:Duplicate entry '3' for key 'PRIMARY'
+ [ SQL语句 ] : UPDATE `hsc_user` SET `id`='3',`real_name`='赵文强',`idcard`='412725199303230618',`phone`='18316028489',`parent_number`='p201200001'
+
+[ 2016-01-17T21:25:12+08:00 ] ::1 /jankzmaker/index.php/Home/User/parentnum.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_student` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `hsc_student` WHERE `stu_name` = 'jankzson' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hsc_user` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+ERR: 1062:Duplicate entry '1' for key 'PRIMARY'
+ [ SQL语句 ] : UPDATE `hsc_user` SET `id`='1',`real_name`='赵文清',`idcard`='412725199303230618',`phone`='18316028489',`parent_number`='p201200001'
+ERR: 1062:Duplicate entry '1' for key 'PRIMARY'
+ [ SQL语句 ] : UPDATE `hsc_user` SET `id`='1',`real_name`='赵文清',`idcard`='412725199303230618',`phone`='18316028489',`parent_number`='p201200001'
+
+[ 2016-01-17T21:31:26+08:00 ] ::1 /jankzmaker/index.php/Home/User/parentnum.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `hsc_student` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hsc_student` WHERE `stu_name` = 'jankzson' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `hsc_user` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+NOTIC: [2] array_merge(): Argument #1 is not an array /Users/jankz/htdocs/jankzmaker/ThinkPHP/Library/Think/Model.class.php 第 1814 行.
+SQL: UPDATE `hsc_user` SET `real_name`='赵文清',`idcard`='412725199303230618',`phone`='18316028489',`parent_number`='p201200001' WHERE `id` = 1 [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hsc_user_student` [ RunTime:0.0004s ]
+

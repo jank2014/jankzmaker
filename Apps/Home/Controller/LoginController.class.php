@@ -12,6 +12,7 @@ class LoginController extends Controller{
 				if($user['password']==$_POST['password']){
 					session('uid',$user['id']);
 					session('username',$user['username']);
+					session('login_type','users');
 					$this->success('登录成功',U('Index/index'));
 				}else{
 					$this->error('密码错误',U('Login/index'));
@@ -32,12 +33,13 @@ class LoginController extends Controller{
 	}
 	public function register(){
 		if(!empty($_POST)){
-			$user = D('User');
+			$user = M('User');
 			$user->create();
-			$info = $user->add();
-			if($info){
+			$user=$user->add();
+			if($user){
 				session('uid',$user['id']);
 				session('username',$user['username']);
+				session('login_type','users');
 				$this->success('注册成功',U('Index/index'));
 			}else{
 				$this->error('注册失败！',U('Login/register'));
