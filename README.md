@@ -7,7 +7,8 @@
 ##快速预览
 ###生成表格
 
-```public function menulist(){
+```
+public function menulist(){
 		//生成页面之前建构数据模型
 		$table=array(
     		'id'=>'id',
@@ -43,11 +44,16 @@
 				->setPage($page_list)
 				->display();
 	}
-	```
+	
+```
 ![GitHub set up](http://7xjw2z.com1.z0.glb.clouddn.com/table.png)
 ###生成form
 
-```public function menulist(){
+
+
+```
+
+public function menulist(){
 		//生成页面之前建构数据模型
 		$table=array(
     		'id'=>'id',
@@ -83,7 +89,12 @@
 				->setPage($page_list)
 				->display();
 	}
+
 ```
+
+
 ![GitHub set up](http://7xjw2z.com1.z0.glb.clouddn.com/form.png)
+
+##看到这里想必你已经大概懂了了...
 
 
