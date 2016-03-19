@@ -5,6 +5,7 @@
 namespace Admin\Controller;
 use Think\Controller;
 class LoginController extends Controller{
+
 	public function index(){
 		if(!empty($_POST)){
 			$manager = M('Manager');
@@ -46,10 +47,22 @@ class LoginController extends Controller{
 					->display();
 		}
 	}
+
+
+
+
+
 	public function logout() {
 		session(null);
 		$this->redirect('Login/index');
 	}
+
+
+
+
+
+
+
 	public function verifyImg() {
 		$conf = array(
 			'length' => 5,

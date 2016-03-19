@@ -22,7 +22,7 @@ class SystemController extends CommonController{
 		}
 
 	}
-	public function addmenu(){
+	public function add(){
 		if(!empty($_POST)){
 			$system =D('System');
 			$system->create();
@@ -37,12 +37,12 @@ class SystemController extends CommonController{
 			$jankzmaker = new \JankzMaker\Controller\Admin\MakerForm();
 			$jankzmaker->setMetaTitle('后台管理')
 					->setCoulmn(1)//配置不分列
-					->setUrl(U('System/addmenu'))
+					->setUrl(U('System/add'))
 					->addFormItem('title','text','菜单名称')
 					->addFormItem('sort','text','排序值')
 					->addFormItem('url','text','链接地址')
 					->addFormItem('icon','text','图标')
-					->addFormItem('pid','select','父ID',1,2,10,$info)
+					->addFormItem('pid','select','父ID','',1,2,10,$info)
 					->display();
 		}
 	}
@@ -51,6 +51,7 @@ class SystemController extends CommonController{
 		$table=array(
     		'id'=>'id',
     		'pid'=>'父ID',
+    		'title'=>'名称',
     		'sort'=>'排序值',
     		'url'=>'链接地址',
     		'icon'=>'图表',
@@ -81,47 +82,117 @@ class SystemController extends CommonController{
 				->setPage($page_list)
 				->display();
 	}
-	public function menuadd(){
+	// public function menuadd(){
+	// 	if(!empty($_POST)){
+	// 		$system =D('System');
+	// 		$system->create();
+	// 		$res = $system->add();
+	// 		if($res){
+	// 			$this->success('添加成功',U('System/addmenu'));
+	// 		}else{
+	// 			$this->error($system->getError());
+	// 		}
+	// 	}else{
+	// 		$info = getList();//调用无限级分类函数
+	// 		$config = array('type'=>'newform');
+	// 		$jankzmaker = new \JankzMaker\Controller\Admin\MakerForm();
+	// 		$jankzmaker->setMetaTitle('测试页')
+	// 			->setUrl(U('index'))
+	// 			->addFormItem('title','text','名称','',2,6)
+	// 			->addFormItem('title','text','菜单名称','',2,6)
+	// 			->addFormItem('sort','text','排序值')
+	// 			->addFormItem('url','text','链接地址')
+	// 			->addFormItem('icon','text','图标')
+	// 			->addFormItem('pid','select','父ID','',2,4,$info)
+	// 			->display();
+	// 	}
+
+	// }
+		/*
+	编辑信息
+	 */
+	public function edit() {
+		$id =I('id','',intval);
+		$system = M('System');
+		$res = $system->find($id);
 		if(!empty($_POST)){
-			$system =D('System');
+			$_POST['id'] = $_GET['id'];
+			$system = M('System');
 			$system->create();
-			$res = $system->add();
-			if($res){
-				$this->success('添加成功',U('System/addmenu'));
+			$result = $system->save();
+			if($result){
+				$this->success('已编辑',U('System/menulist'));
 			}else{
-				$this->error($system->getError());
+				$this->error('编辑失败!');
 			}
 		}else{
 			$info = getList();//调用无限级分类函数
-			$config = array('type'=>'newform');
 			$jankzmaker = new \JankzMaker\Controller\Admin\MakerForm();
-			$jankzmaker->setMetaTitle('测试页')
-				->setUrl(U('index'))
-				->addFormItem('title','text','名称',2,6)
-				->addFormItem('title','text','菜单名称',2,6)
-				->addFormItem('sort','text','排序值')
-				->addFormItem('url','text','链接地址')
-				->addFormItem('icon','text','图标')
-				->addFormItem('pid','select','父ID',2,4,$info)
+			$jankzmaker->setMetaTitle('编辑')
+				->setUrl(U('System/edit',array('id'=>$id)))
+				->setCoulmn(1)//配置不分列
+				->addFormItem('title','text','菜单名称',$res['title'])
+				->addFormItem('sort','text','排序值',$res['sort'])
+				->addFormItem('url','text','链接地址',$res['url'])
+				->addFormItem('icon','text','图标',$res['icon'])
+				->addFormItem('pid','select','父ID','',1,2,10,$info)
 				->display();
+			}
+
+	}
+	/*
+	删除学生信息
+	 */
+	public function delete(){
+		$id = $_GET['id'];
+		$status = $_GET['status'];
+		$system = M('System');
+		$info = $system->delete($id);
+		if($info){
+			$this->success('删除成功',U('System/menulist'));
+		}else{
+			$this->error('删除失败');
 		}
 
 	}
-	public function test1(){
-		$jankzmaker = new \JankzMaker\Controller\Common\CommonMaker();
-		// var_dump($jankzmaker);die;
-		$jankzmaker->setMetaTitle('PAGE测试')
-				->setCoulmn(2)
-				->addPageItem('username','text','用户',1,2,10)
-				->addPageItem('username','text','用户',1,2,10)
-				->addPageItem('username','text','用户',1,2,10)
-				->addPageItem('username','text','用户',1,2,10)
-				->addPageItem('password','text','密码',2,2,10)
-				->addPageItem('password','text','密码',2,2,10)
-				->addPageItem('password','text','密码',2,2,10)
-				->display();
+	/*
+	禁用
+	 */
+		public function forbid(){
+		$id = $_GET['id'];
+		$status = $_GET['status'];
+		$system = M('System');
+		$_POST['id'] = $id;
+		$_POST['status'] = $status;
+		$system->create();
+		$info = $system->save();
+		if($info){
+			$this->success('锁定成功',U('System/menulist'));
+		}else{
+			$this->error('锁定失败');
+		}
 
 	}
+
+	/*
+	启用
+	 */
+		public function resume(){
+		$id = $_GET['id'];
+		$status = $_GET['status'];
+		$system = M('System');
+		$_POST['id'] = $id;
+		$_POST['status'] = $status;
+		$system->create();
+		$info = $system->save();
+		if($info){
+			$this->success('开启成功',U('System/menulist'));
+		}else{
+			$this->error('开启失败');
+		}
+
+	}
+
 
 
 }

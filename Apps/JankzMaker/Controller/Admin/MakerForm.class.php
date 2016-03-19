@@ -41,10 +41,11 @@ class MakerForm extends Controller{
 		$this->template = $template;
 		return $this;
 	}
-	public function addFormItem($name,$type,$title,$coulmn=1,$col_l=2,$col_d=10,$options=array()){
+	public function addFormItem($name,$type,$title,$value,$coulmn=1,$col_l=2,$col_d=10,$options=array()){
 		$item['name']=$name;
 		$item['type']=$type;
 		$item['title']=$title;
+		$item['value']=$value;
 		$item['options']=$options;
 		$item['coulmn']=$coulmn;
 		$item['col_l'] =$col_l;

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSC家校交流平台与成绩持久化方案</title>
+    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="__PUBLIC__/Common/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/Common/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="__PUBLIC__/Common/hplus/css/animate.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/Home/css/home.css" rel="stylesheet">
+     <block name="my_css"></block>
+</head>
+
+<body class="gray-bg">
+<!-- 导航开始 -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                <span class="sr-only">响应式导航切换</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">HSC</a>
+        </div>
+        <div class="navbar-collapse collapse" id="mynavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="{{:U('Index/index')}}">首页</a></li>
+                <li><a href="{{:U('Course/index')}}">课程</a></li>
+                <li><a href="{{:U('Recomend/index')}}">推荐</a></li>
+                <li><a href="{{:U('Share/index')}}">分享</a></li>
+                <li><a href="{{:U('Query/index')}}">查询</a></li>
+                <li><a href="{{:U('Activity/index')}}">活动</a></li>
+                <li><a href="{{:U('Order/index')}}">预约</a></li>
+                <li><a href="{{:U('Notice/index')}}">公告</a></li>
+            </ul>
+            <div class="navbar-right mylogin">
+               <a href="{{:U('Index/login')}}" type="btn" class="btn btn-primary">登陆</a>
+              <a href="{{:U('Index/register')}}" type="btn" class="btn btn-info">注册</a>
+            </div>
+        </div>
+    </div>
+</nav>
+    <block name="main"></block>
+
+<div class="bottom">
+    <div class="container">
+        <div class="bottom-list">
+            <a href="#">ANNI文章</a>
+            <a href="#">ANNI散文</a>
+            <a href="#">ANNI诗歌</a>
+            <a href="#">ANNI情感</a>
+            <a href="#">ANNI励志</a>
+            <a href="#">ANNI回忆</a>
+            <a href="#">ANNI淡忘</a>
+            <a href="#">ANNI勇敢</a>
+            <a href="#">ANNI热情</a>
+            <a href="#">ANNI文章</a>
+            <a href="#">ANNI文章</a>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p></p>
+                <p>Copyright © 2015 <a href="#">www.jankz.com</a>, All Rights Reserved. GMT+8, 2015-06-29 23:42:11</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="__PUBLIC__/Common/jquery/jquery-2.1.4.min.js"></script>
+    <script src="__PUBLIC__/Common/bootstrap/js/bootstrap.min.js"></script>
+     <block name="my_js"></block>
+
+
+
+
+
+</body>
+
+</html>

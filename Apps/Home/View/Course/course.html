@@ -1,0 +1,165 @@
+<extend name="Public:base"/>
+<block name="my_css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Common/hplus/css/plugins/plyr/plyr.css">
+	<style type="text/css" media="screen">
+		body{
+        background:  #f3f3f4;
+}.profile-content{
+    border-top: none!important;
+}.ibox
+{
+    clear: both;
+
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding: 0;
+}.ibox.collapsed .ibox-content
+{
+    display: none;
+}.ibox.collapsed .fa.fa-chevron-up:before
+{
+    content: '\f078';
+}.ibox.collapsed .fa.fa-chevron-down:before
+{
+    content: '\f077';
+}.ibox:after,
+.ibox:before
+{
+    display: table;
+}.ibox-title
+{
+    min-height: 48px;
+    margin-bottom: 0;
+    padding: 14px 15px 7px;
+
+    color: inherit;
+    border-width: 4px 0 0;
+    border-style: solid solid none;
+    border-color: #e7eaec;
+    -webkit-border-image: none;
+         -o-border-image: none;
+            border-image: none;
+    background-color: #fff;
+
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+}.ibox-content
+{
+    padding: 15px 20px 20px;
+
+    color: inherit;
+    border-width: 1px 0;
+    border-style: solid solid none;
+    border-color: #e7eaec;
+    -webkit-border-image: none;
+         -o-border-image: none;
+            border-image: none;
+    background-color: #fff;
+}.no-padding
+{
+    padding: 0!important;
+}.ibox-content.text-box
+{
+    padding-top: 15px;
+    padding-bottom: 0;
+}.border-left-right
+{
+    border-top: none;
+    border-right: 1px solid #e7eaec;
+    border-bottom: none;
+    border-left: 1px solid #e7eaec;
+}.m-t-lg
+{
+    margin-top: 30px;
+}
+	</style>
+</block>
+<block name="main">
+<div class="container">
+	        <div class="col-sm-4">
+                <div>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn-danger m-r-sm">12</button>
+                                    消息
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-primary m-r-sm">28</button>
+                                    文章
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-info m-r-sm">15</button>
+                                    评论
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn-info m-r-sm">20</button>
+                                    新闻
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-success m-r-sm">40</button>
+                                    赞
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger m-r-sm">30</button>
+                                    通知
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn-warning m-r-sm">20</button>
+                                    专辑
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-default m-r-sm">40</button>
+                                    群组
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-warning m-r-sm">30</button>
+                                    权限
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="ibox-content text-center">
+                                <h1>奔波儿灞</h1>
+                                <div class="m-b-sm">
+                                    <img alt="image" class="img-circle" src="__PUBLIC__/Common/hplus/img/a8.jpg">
+                                </div>
+                                <p class="font-bold">CEO</p>
+
+                                <div class="text-center">
+                                    <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> 赞 </a>
+                                    <a class="btn btn-xs btn-primary"><i class="fa fa-heart"></i> 收藏</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="player">
+                    <video poster="https://plyr.io/poster.jpg" controls crossorigin>
+                        <!-- Video files -->
+                        <source src="__PUBLIC__/Home/video/movie.mp4" type="video/mp4">
+                        <source src="https://cdn.selz.com/plyr/1.0/movie.webm" type="video/webm">
+
+                        <!-- Text track file -->
+                        <track kind="captions" label="English" srclang="en" src="https://cdn.selz.com/plyr/1.0/example_captions_en.vtt" default>
+
+                            <!-- Fallback for browsers that don't support the <video> element -->
+                            <a href="__PUBLIC__/Home/video/movie.mp4">Download</a>
+                    </video>
+                </div>
+            </div>
+</div>
+</block>

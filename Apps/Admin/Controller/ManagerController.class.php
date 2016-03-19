@@ -32,7 +32,7 @@ class ManagerController extends Controller{
 				->display();
 
 	}
-	public function add(){//编辑和添加用同一个方法
+	public function add(){
 		if(!empty($_POST)){
 			$info = D('Manager');
 			$info->create();
@@ -53,23 +53,91 @@ class ManagerController extends Controller{
 				->addFormItem('repassword','text','重复密码')
 				->addFormItem('email','text','邮箱')
 				->addFormItem('level','text','管理等级')
-				->addFormItem('group_id','select','用户组id',1,2,10,$options)
+				->addFormItem('group_id','select','用户组id','',1,2,10,$options)
 				->display();
 		}
 	}
-	public function test(){
-		$manager = D('Manager');
-		$manager = $manager->where(array('status'=>1))->relation(true)->select();
-		foreach ($manager as $key => $value) {
-			foreach ($value as $key => $val) {
-				if(is_array($val)){
-					foreach ($val as $key => $va) {
-						print_r($va);
-					}
-				}
+	public function edit() {
+		$id =I('id','',intval);
+		$manager = M('Manager');
+		$info = $manager->find($id);
+		if(!empty($_POST)){
+			$_POST['id'] = $_GET['id'];
+			$manager = M('Manager');
+			$manager->create();
+			$info = $manager->save();
+			if($info){
+				$this->success('已编辑',U('Manager/index'));
+			}else{
+				$this->error('编辑失败!');
 			}
+		}else{
+			$options = M('AuthGroup')->where(array('status'=>1))->select();
+			$jankzmaker = new \JankzMaker\Controller\Admin\MakerForm();
+			$jankzmaker->setMetaTitle('编辑管理员')
+				->setCoulmn(1)//设置是否分列
+				->setUrl(U('Manager/edit',array('id'=>$id)))
+				->addFormItem('username','text','管理员名称',$info['username'])
+				->addFormItem('password','text','密码',$info['password'])
+				->addFormItem('repassword','text','重复密码',$info['password'])
+				->addFormItem('email','text','邮箱',$info['email'])
+				->addFormItem('level','text','管理等级',$info['level'])
+				->addFormItem('group_id','select','用户组id','',1,2,10,$options)
+				->display();
 		}
-		// print_r($manager);
+
+	}
+	/*
+	删除学生信息
+	 */
+	public function delete(){
+		$id = $_GET['id'];
+		$status = $_GET['status'];
+		$manager = M('Manager');
+		$info = $manager->delete($id);
+		if($info){
+			$this->success('删除成功',U('Manager/index'));
+		}else{
+			$this->error('删除失败');
+		}
+
+	}
+	/*
+	禁用
+	 */
+		public function forbid(){
+		$id = $_GET['id'];
+		$status = $_GET['status'];
+		$manager = M('Manager');
+		$_POST['id'] = $id;
+		$_POST['status'] = $status;
+		$manager->create();
+		$info = $manager->save();
+		if($info){
+			$this->success('锁定成功',U('Manager/index'));
+		}else{
+			$this->error('锁定失败');
+		}
+
+	}
+
+	/*
+	启用
+	 */
+		public function resume(){
+		$id = $_GET['id'];
+		$status = $_GET['status'];
+		$manager = M('Manager');
+		$_POST['id'] = $id;
+		$_POST['status'] = $status;
+		$manager->create();
+		$info = $manager->save();
+		if($info){
+			$this->success('开启成功',U('Manager/index'));
+		}else{
+			$this->error('开启失败');
+		}
+
 	}
 
 }

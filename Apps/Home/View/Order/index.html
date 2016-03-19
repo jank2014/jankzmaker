@@ -1,0 +1,64 @@
+
+<extend name = "Public:base"/>
+<block name="my_css">
+    <style type="text/css">
+    body{
+        background:  #f3f3f4;
+    }
+    .contact-box
+{
+    margin-bottom: 20px;
+    padding: 20px;
+
+    border: 1px solid #e7eaec;
+    background-color: #fff;
+}.contact-box a
+{
+    color: inherit;
+}.m-t-xs
+{
+    margin-top: 5px;
+}.font-bold
+{
+    font-weight: 600;
+}.wrapper
+{
+    padding: 0 20px;
+}.wrapper-content
+{
+    padding: 20px;
+}
+    </style>
+</block>
+<block name="main">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+        <volist name="info" id="teacher">
+            <div class="col-sm-4">
+                <div class="contact-box">
+                    <a href="profile.html">
+                        <div class="col-sm-4">
+                            <div class="text-center">
+                                <img alt="image" class="img-circle m-t-xs img-responsive" src="{{$teacher.image}}">
+                                <div class="m-t-xs font-bold">可预约</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h3><strong>{{$teacher.name}}</strong></h3>
+                            <p><i class="fa fa-map-marker"></i>{{$teacher.grade}}</p>
+                            <address>
+                            <strong>{{$teacher.subject}}</strong><br>
+                            E-mail:{{$teacher.email}}<br>
+                            <abbr title="Phone">Tel:</abbr>{{$teacher.phone}}
+                        </address>
+                        </div>
+                        <div class="clearfix"></div>
+                    </a>
+                </div>
+            </div>
+        </volist>
+        </div>
+    </div>
+
+
+</block>
