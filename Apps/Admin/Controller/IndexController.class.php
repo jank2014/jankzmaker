@@ -18,22 +18,6 @@ class IndexController extends CommonController {
 	    }
 
     }
-    public function test(){
-        $config = array('type' =>'newform');
-            var_dump(C('USER_AUTH_KEY'));
-    	$jankzmaker = new \JankzMaker\Controller\JankzMaker();
-    	$jankzmaker->setMetaTitle('测试页面')
-                    ->addConfTpl($config)
-    				->display();
-    }
-    public function info(){
-        $config = array('type' =>'newform');
-            var_dump(C('USER_AUTH_KEY'));
-        $jankzmaker = new \JankzMaker\Controller\JankzMaker();
-        $jankzmaker->setMetaTitle('测试页面')
-                    ->addConfTpl($config)
-                    ->display();
-    }
 
 
 }
